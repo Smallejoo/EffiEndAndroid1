@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graf"
+    app:startDestination="@id/log_in">
+
+    <fragment
+        android:id="@+id/sarch_bar"
+        android:name="com.example.gamessarchend.frags.sarch_bar"
+        android:label="fragment_sarch_bar"
+        tools:layout="@layout/fragment_sarch_bar" >
+        <action
+            android:id="@+id/action_sarch_bar_to_gamePage"
+            app:destination="@id/gamePage" />
+        <action
+            android:id="@+id/action_sarch_bar_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamePage"
+        android:name="com.example.gamessarchend.frags.gamePage"
+        android:label="fragment_game_page"
+        tools:layout="@layout/fragment_game_page" >
+        <action
+            android:id="@+id/action_gamePage_to_sarch_bar"
+            app:destination="@id/sarch_bar" />
+    </fragment>
+    <fragment
+        android:id="@+id/log_in"
+        android:name="com.example.gamessarchend.frags.Log_in"
+        android:label="Log_in" >
+        <action
+            android:id="@+id/action_log_in_to_sarch_bar"
+            app:destination="@id/sarch_bar" />
+        <action
+            android:id="@+id/action_log_in_to_subscribe"
+            app:destination="@id/subscribe" />
+        <action
+            android:id="@+id/action_log_in_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/subscribe"
+        android:name="com.example.gamessarchend.frags.Subscribe"
+        android:label="Subscribe" >
+        <action
+            android:id="@+id/action_subscribe_to_log_in"
+            app:destination="@id/log_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.gamessarchend.frags.Profile"
+        android:label="Profile" >
+        <action
+            android:id="@+id/action_profile_to_sarch_bar"
+            app:destination="@id/sarch_bar" />
+        <action
+            android:id="@+id/action_profile_to_log_in"
+            app:destination="@id/log_in" />
+    </fragment>
+</navigation>

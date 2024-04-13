@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B6DCD8"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".frags.sarch_bar">
+
+    <!-- Search Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SBsarchBarTextIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter search term" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/SBcofirmButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:text="Search"
+        android:textColor="@color/white" />
+
+    <!-- Category Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/SBcategory1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Action"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/SBcategory2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Strategy"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/SBcategory3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="RPG"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- More Categories and RecyclerView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/SBcategory4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Moba"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/SBcategory5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MMORPG"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/SBcategory6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Strategy"
+            android:textColor="@color/white" />
+
+        <!-- RecyclerView for displaying results -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/SB_RV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/BacktoProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to profile" />
+    </LinearLayout>
+
+</LinearLayout>

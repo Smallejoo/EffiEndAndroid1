@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1006881639123",
+    "project_id": "gamesdatabase-c3c54",
+    "storage_bucket": "gamesdatabase-c3c54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006881639123:android:efeaaaaa0af7058dbba226",
+        "android_client_info": {
+          "package_name": "com.example.gamessarchend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiTLUBEc6tK_GB3zQsMIsy39w7SrTRbkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
